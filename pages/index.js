@@ -27,15 +27,19 @@ const Home = () => {
             <h2> Turn me into anyone you want! Make sure you refer to me as "Anurag" in the prompt</h2>
           </div>
           <div className="prompt-container">
-        <input className="prompt-box" value={input} onChange={onChange} />
-      </div>
-        </div>
-        <div className="prompt-buttons">
+  <input className="prompt-box" value={input} onChange={onChange} />
+  <div className="prompt-buttons">
+    {/* Add onClick property here */}
     <a className="generate-button" onClick={generateAction}>
       <div className="generate">
         <p>Generate</p>
       </div>
     </a>
+  </div>
+</div>
+      
+        </div>
+      
       </div>
       <div className="badge-container grow">
         <a
@@ -50,7 +54,7 @@ const Home = () => {
         </a>
       </div>
     </div>
-    </div>
+   
   );
 };
 
