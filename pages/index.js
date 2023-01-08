@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
+import  React, { useEffect, useState } from "react";
 
 const Home = () => {
   const [input, setInput] = useState('');
